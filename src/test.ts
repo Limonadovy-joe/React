@@ -63,6 +63,8 @@ class Coop<T extends Animal> {
     return (!results.length) ? null : results[0];
   }
 }
-export {Animal, Coop, Lion, Wolf};
+
+
+export {Coop, Lion, Wolf};
 
 
