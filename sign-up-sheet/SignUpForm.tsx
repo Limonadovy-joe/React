@@ -78,6 +78,8 @@ export const SignUpForm = ({onFormSubmit}: SignUpFormProps) => {
     console.log(errorMsgName, errorMsgEmail);
     return {...errorMsgName, ...errorMsgEmail};
   }
+  //TS2739: Type '{ [x: string]: { message: string; }; }'
+  //is missing the following properties from type 'FieldsErrorsGeneric ': name, email
 
 
   const _handleFormSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
